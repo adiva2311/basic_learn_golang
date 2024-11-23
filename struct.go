@@ -8,12 +8,14 @@ type NAMA_STRUCT struct{
 }
 */
 type Customer struct{
-	Name, Address string
+	Name string
+	Address string
 	Age int
 }
 
 func main(){
-	// Cara Deklari Struct 1
+	// Cara Membuat Data/Object dari Struct 1
+	// var NAMA_VARIABLE NAMA_STRUCT
 	var adiva Customer
 	adiva.Name = "Adiva Nursuandy"
 	adiva.Address = "Indonesia"
@@ -21,10 +23,10 @@ func main(){
 
 	fmt.Println(adiva)
 	fmt.Println("Nama :", adiva.Name)
-	fmt.Println(adiva.Address)
-	fmt.Println(adiva.Age)
+	fmt.Println("Alamat :",adiva.Address)
+	fmt.Println("Usia :",adiva.Age)
 
-	// Cara Deklari Struct 2
+	// Cara Membuat Data/Object dari Struct 2
 	udin := Customer{
 		Name: "Udin Petot",
 		Address: "Jateng",
@@ -32,7 +34,8 @@ func main(){
 	}
 	fmt.Println(udin)
 
-	// Cara Deklari Struct 3
+	// Cara Membuat Data/Object dari Struct 3
 	ucup := Customer{"Ucup Surucup", "Bandung", 32}
 	fmt.Println(ucup)
+
 }

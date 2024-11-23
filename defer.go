@@ -11,8 +11,6 @@ func runApplication(){
 	fmt.Println("Running Application")
 }
 
-
-
 func main(){
 	runApplication()
 }
